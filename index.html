@@ -2,160 +2,224 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Nikhil Gupta | Software Engineer</title>
+    <meta name="description" content="Portfolio of Nikhil Gupta - Software Engineer focused on distributed systems, backend services, and large-scale data platforms.">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8aba03dd0b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
+    <header class="site-header" id="home">
+        <div class="container nav-wrap">
+            <a href="#home" class="brand">Nikhil Gupta</a>
             <nav>
-                <h1 class="logo"><span style="color: #ffd500;">N</span>ikhil <span style="color: #ffd500;">G</span>upta</h1>
-                <ul>
-                    <li><a href="#header">Home</a></li>
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <!-- <li><a href="#">Contact</a></li> -->
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I am Nikhil Gupta</h1>
-            </div>
         </div>
-    </div>
-    <!-- ------------------about------------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <div class="about-col-1">
-                        <img src="Nikhil Gupta.jpg" alt="">
-                    </div>
-                    <p class="about-p">Welcome to my corner of the web! I'm a passionate <span>Full Stack Developer</span> with over a year of
-                         hands-on experience in crafting dynamic and robust applications. Currently, I am working 
-                         as an <span> Associate Data Engineer</span> at <span>Shell</span>, where I apply my problem-solving skills to drive
-                          impactful projects. Previously, I sharpened my tech skills and gained invaluable experience
-                            during my internship at<span> Morgan Stanley</span>. I thrive on building scalable microservices and efficient APIs.
-                             Always eager to learn new technologies and adapt to changes quickly, I am committed to delivering seamless
-                              and engaging user experiences. Let's connect and create something amazing together!
+    </header>
+
+    <main>
+        <section class="hero section reveal">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Software Engineer · Backend & Data Platforms</p>
+                    <h1>Building resilient distributed systems for scale, speed, and reliability.</h1>
+                    <p class="lead">
+                        I’m Nikhil Gupta, a Software Engineer in Bangalore with experience across Visa, Shell, and Morgan Stanley.
+                        I specialize in cloud-native backend services, event-driven architectures, and real-time data processing.
                     </p>
-                    <div class="tab-titles">
-                        <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
-                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <div class="cta-group">
+                        <a class="btn btn-primary" href="mailto:nikhilgupta9874@gmail.com">Get in touch</a>
+                        <a class="btn btn-secondary" href="https://www.linkedin.com/in/nikhilgupta08" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
-                    <!-- <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Languages</span><br>Java, Python, C++</li>
-                            <li><span>Backend</span><br>Spring Boot, REST API, Microservices, Spring MVC, Spring Security, Spring Data JPA</li>
-                            <li><span>Frontend</span><br>HTML, CSS, Javascript, jQuery</li>
-                            <li><span>Version Control</span><br>Git, Github</li>
-                            <li><span>Cloud</span><br>Azure Data Factory, Azure Databricks, Microsoft Power Platform</li>
-                            <li><span>Others</span><br>SQL Server, Linux/Unix</li>
-                        </ul>
-                    </div> -->
-                    <div class="tab-contents active-tab" id="experience">
-                        <ul>
-                            <li><span>Aug 2023 - Current</span><br>Associate Data Engineer at Shell<br>Bangalore, Karnataka, India</li>
-                            <li><span>Jan 2023 - Jul 2023</span><br>Technology Analyst Intern at Morgan Stanley<br> Mumbai, Maharashtra, India</li>
-                        </ul>
+                    <ul class="meta-list">
+                        <li>Bangalore, India</li>
+                        <li>Java · Python · SQL</li>
+                        <li>Azure · Kafka · Flink · Spring Boot</li>
+                    </ul>
+                </div>
+
+                <aside class="profile-card">
+                    <img src="Nikhil Gupta.jpg" alt="Portrait of Nikhil Gupta">
+                    <div class="profile-content">
+                        <h2>Nikhil Gupta</h2>
+                        <p>Software Engineer</p>
+                        <div class="contact-mini">
+                            <a href="mailto:nikhilgupta9874@gmail.com">nikhilgupta9874@gmail.com</a>
+                            <a href="https://github.com/nikhilgupta9874" target="_blank" rel="noopener noreferrer">github.com/nikhilgupta9874</a>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2019-2023</span><br>B.E. Computer Engineering<br>Thapar Institute of Engineering and Technology<br>Patiala, Punjab, India</li>
-                        </ul>
-                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section reveal" id="about">
+            <div class="container">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary-card">
+                    Software Engineer specializing in distributed systems, backend services, and large-scale data platforms.
+                    Experienced in building cloud-native infrastructure, real-time streaming pipelines, and developer tooling on Azure.
+                    Strong background in Java and Python with hands-on experience designing microservices, processing high-volume event streams,
+                    and transforming JSON-based data into relational and analytics systems.
+                </p>
+            </div>
+        </section>
+
+        <section class="section reveal" id="skills">
+            <div class="container">
+                <h2 class="section-title">Core Skills</h2>
+                <div class="skills-grid">
+                    <article class="card">
+                        <h3>Languages</h3>
+                        <p>Java, Python, SQL</p>
+                    </article>
+                    <article class="card">
+                        <h3>Backend & Systems</h3>
+                        <p>Spring Boot, REST APIs, Kafka, Microservices, Apache Flink</p>
+                    </article>
+                    <article class="card">
+                        <h3>Cloud & DevOps</h3>
+                        <p>Azure, Docker, Jenkins, Git</p>
+                    </article>
+                    <article class="card">
+                        <h3>Databases</h3>
+                        <p>MySQL, SQL Server, MongoDB</p>
+                    </article>
+                    <article class="card">
+                        <h3>Data Engineering Tools</h3>
+                        <p>Spark, Airflow, Azure Databricks, Azure Event Hub, Azure Data Factory</p>
+                    </article>
+                    <article class="card">
+                        <h3>Architecture Focus</h3>
+                        <p>Distributed systems, stream processing, secure identity, scalable platform modernization</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- ------------------skills--------------------->
-    <div id="skills">
-        <div class="container">
-            <h1 class="sub-title">Skills</h1>
-            <div class="skills-list">
-                <div>
-                    <img width="480" height="480" src="https://img.icons8.com/color/480/java-coffee-cup-logo--v1.png" class="tech-img" alt="java-coffee-cup-logo--v1"/>
-                    <h2 style="text-indent: 20px;">Java</h2>
-                </div>
-                <div>
-                    <img width="480" height="480" src="https://img.icons8.com/color/480/spring-logo.png" class="tech-img" alt="spring-logo"/>
-                    <h2 style="text-indent: 20px;">Spring</h2>
-                </div>
-                <div>
-                    <img width="480" height="480" src="https://img.icons8.com/color/480/python--v1.png" class="tech-img" alt="python--v1"/>
-                    <h2 style="text-indent: 20px;">Python</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/api-settings.png" alt="api-settings"/>
-                    <h2>REST API</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/html-5--v1.png" alt="html-5--v1"/>
-                    <h2 style="text-indent: 20px;">HTML</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/css3.png" alt="css3"/>
-                    <h2 style="text-indent: 26px;">CSS</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/javascript--v1.png" alt="javascript--v1"/>
-                    <h2>Javascript</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/git.png" alt="git"/>
-                    <h2 style="text-indent: 30px;">Git</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/fluency/100/azure-1.png" alt="azure-1"/>
-                    <h2 style="text-indent: 20px;">Azure</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/fluency/100/microsoft-power-apps.png" alt="microsoft-power-apps"/>
-                    <h2>Powerapps</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/fluency/100/microsoft-power-automate-2020.png" alt="microsoft-power-automate-2020"/>
-                    <h2>Power<br>Automate</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/power-bi-2021.png" alt="power-bi-2021"/>
-                    <h2>Power BI</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/microsoft-sql-server.png" alt="microsoft-sql-server"/>
-                    <h2 style="text-align: center;">SQL Server</h2>
-                </div>
-                <div>
-                    <img width="100" height="100" src="https://img.icons8.com/color/100/linux--v1.png" alt="linux--v1"/>
-                    <h2>Linux/Unix</h2>
+        </section>
+
+        <section class="section reveal" id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-head">
+                            <h3>Software Engineer · Visa</h3>
+                            <span>May 2025 – Present · Bangalore</span>
+                        </div>
+                        <ul>
+                            <li>Implemented Single Sign-On authentication using OAuth2 and OIDC as part of a cloud platform migration initiative.</li>
+                            <li>Developed a Python client library using the Chain of Responsibility pattern to automate SeaTunnel Web API workflows.</li>
+                            <li>Built real-time distributed event processing pipelines using Kafka and Flink for high-volume validation and transformation.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-head">
+                            <h3>Associate Data Engineer · Shell</h3>
+                            <span>Aug 2023 – May 2025 · Bangalore</span>
+                        </div>
+                        <ul>
+                            <li>Built a high-throughput event ingestion platform on Azure Event Hub handling millions of daily events across 20+ global sites.</li>
+                            <li>Designed data transformation pipelines converting semi-structured JSON streams into relational schemas for enterprise analytics.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-head">
+                            <h3>Technology Analyst Intern · Morgan Stanley</h3>
+                            <span>Jan 2023 – Jul 2023 · Mumbai</span>
+                        </div>
+                        <ul>
+                            <li>Developed scalable REST APIs in Java and Spring Boot to improve backend maintainability.</li>
+                            <li>Automated CI/CD workflows with Jenkins and Docker, reducing deployment time by 10%.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
+        </section>
+
+        <section class="section reveal" id="credentials">
+            <div class="container two-col">
+                <article class="card">
+                    <h3>Education</h3>
+                    <p><strong>B.E. in Computer Engineering</strong><br>Thapar Institute of Engineering and Technology (2019 – 2023)</p>
+                    <p>CGPA: 8.68/10</p>
+                </article>
+                <article class="card">
+                    <h3>Certification</h3>
+                    <ul>
+                        <li>Oracle Certified Associate, Java SE8 Programmer</li>
+                        <li>Microsoft Certified: Azure Data Engineer Associate</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-wrap">
+            <p>© 2026 Nikhil Gupta</p>
+            <div class="footer-links">
+                <a href="mailto:nikhilgupta9874@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/nikhilgupta08" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/nikhilgupta9874" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
         </div>
-    </div>
+    </footer>
 
-
-
-    <!-- -------------------------------------------------- -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks)
+        const revealObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in-view");
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.16 }
+        );
+
+        document.querySelectorAll(".reveal, .timeline-item, .card").forEach((el) => {
+            revealObserver.observe(el);
+        });
+
+        const navLinks = document.querySelectorAll(".nav-links a");
+        const sectionTargets = document.querySelectorAll("main section[id], footer[id]");
+
+        const setActiveLink = (id) => {
+            navLinks.forEach((link) => {
+                const isMatch = link.getAttribute("href") === `#${id}`;
+                link.classList.toggle("active", isMatch);
+            });
+        };
+
+        const sectionObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveLink(entry.target.id);
+                    }
+                });
+            },
             {
-                tablink.classList.remove("active-link");
+                rootMargin: "-32% 0px -55% 0px",
+                threshold: 0.1
             }
-            for(tabcontent of tabcontents)
-            {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+        );
+
+        sectionTargets.forEach((section) => sectionObserver.observe(section));
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                const targetId = link.getAttribute("href").slice(1);
+                setActiveLink(targetId);
+            });
+        });
     </script>
 </body>
 </html>
